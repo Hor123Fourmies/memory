@@ -1,0 +1,35 @@
+body{
+    background: indianred;
+
+}
+
+#boutonNouvellePartie{
+    margin-bottom: 50px;
+}
+
+#plateauJeu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 650px;
+    margin-left: 50px;
+}
+
+.case{
+    height: 130px;
+    width: 130px;
+    border: 2px solid grey;
+    margin: 5px;
+    background: navajowhite;
+}
+
+.carte{
+    height: 120px;
+    width: 120px;
+    margin: 5px;
+    visibility: hidden;
+
+}
+
+
+
