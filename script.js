@@ -12,6 +12,7 @@ var planete11 = 'images/backgroundSpace_01.1.png';
 var planete12 = 'images/backgroundSpace_01.1.png';
 
 
+
 var dosImage = 'images/preview-trees-and-bushesx2.png';
 
 
@@ -19,27 +20,16 @@ var jeuCartes = [planete1, planete2, planete3, planete4, planete5, planete6,
                 planete7, planete8, planete9, planete10, planete11, planete12];
 
 
-var place = document.getElementsByClassName('carte');
+var tableauSrc = [];
 
-var place1 = document.getElementById('place1');
-var place2 = document.getElementById('place2');
-var place3 = document.getElementById('place3');
-var place4 = document.getElementById('place4');
-var place5 = document.getElementById('place5');
-var place6 = document.getElementById('place6');
-var place7 = document.getElementById('place7');
-var place8 = document.getElementById('place8');
-var place9 = document.getElementById('place9');
-var place10 = document.getElementById('place10');
-var place11 = document.getElementById('place11');
-var place12 = document.getElementById('place12');
+var place = document.getElementsByClassName('carte');
 
 var boutonNouvellePartie = document.getElementById('boutonNouvellePartie');
 
+
 boutonNouvellePartie.addEventListener('click', function () {
-
+    location.reload();
 });
-
 
 
     for (var i=0; i<12; i++){
@@ -55,76 +45,41 @@ boutonNouvellePartie.addEventListener('click', function () {
 
 var caseJeu = document.getElementsByClassName('case');
 
+for (let i=0; i<caseJeu.length; i++){
 
-for (var i=0; i<caseJeu.length; i++){
+    caseJeu[i].addEventListener('click', function ()
 
-    caseJeu[i].addEventListener('click', function () {
-        this.firstElementChild.style.visibility = 'visible';
-        console.log(this.firstElementChild);
+    {
+            this.firstElementChild.style.visibility = 'visible';
 
 
-        if (planete1==='visible'&& planete2==='visible'){
-            alert('bravo');
+        tableauSrc.push(this.firstElementChild);
+
+        if (tableauSrc.length === 2) {
+
+            if (tableauSrc[0].src===tableauSrc[1].src)
+            {
+                //alert('bravo');
+                tableauSrc.splice(0,2);
+            }
+
+            else
+            {
+                // alert('erreur');
+                setTimeout(function(){
+                    tableauSrc[0].style.visibility = 'hidden';
+                    tableauSrc[1].style.visibility = 'hidden';
+                    tableauSrc.splice(0,2);
+                }, 900);
+
+
+                // .style.visibility = 'hidden';
+                // .style.visibility = 'hidden';
+            }
         }
 
-/*
-        switch (jeuCartes) {
-            case planete1 === planete2:
-            case planete3 === planete4:
-            case planete5 === planete6:
-            case planete7 === planete8:
-            case planete9 === planete10:
-            case planete11 === planete12:
-                alert('bravo');
-                break;
-            default:
-                this.firstElementChild.style.visibility = 'invisible';
-                break;
-        }
-*/
     });
-
 }
-
-
-
-
-/*
-
-carteJeu.addEventListener('click', function () {
-    carteJeu.style.visibility = 'visible';
-});
-
-
-console.log(caseJeu);
-
-*/
-
-
-
-
-
-
-/*
-
-place1.src = jeuCartes[0];
-place2.src = jeuCartes[1];
-place3.src = jeuCartes[2];
-place4.src = jeuCartes[3];
-place5.src = jeuCartes[4];
-place6.src = jeuCartes[5];
-place7.src = jeuCartes[6];
-place8.src = jeuCartes[7];
-place9.src = jeuCartes[8];
-place10.src = jeuCartes[9];
-place11.src = jeuCartes[10];
-place12.src = jeuCartes[11];
-
-*/
-
-/*
-
-
 
 
 /*
