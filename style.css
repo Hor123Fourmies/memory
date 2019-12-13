@@ -4,7 +4,17 @@ body{
 }
 
 #boutonNouvellePartie{
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-left: 250px;
+    margin-bottom: 30px;
+    height: 50px;
+    width: 250px;
+    color: navajowhite;
+    font-family: Verdana;
+    background: darkred;
+    border: 2px grey solid;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
 #plateauJeu{

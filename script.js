@@ -72,9 +72,6 @@ for (let i=0; i<caseJeu.length; i++){
                     tableauSrc.splice(0,2);
                 }, 900);
 
-
-                // .style.visibility = 'hidden';
-                // .style.visibility = 'hidden';
             }
         }
 
