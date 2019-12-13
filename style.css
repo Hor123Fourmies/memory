@@ -1,6 +1,5 @@
 body{
     background: indianred;
-
 }
 
 #boutonNouvellePartie{
@@ -38,9 +37,145 @@ body{
     width: 120px;
     margin: 5px;
     visibility: hidden;
+}
 
+
+@media (max-width: 365px)
+{
+
+    body{
+        background: indianred;
+    }
+
+    #boutonNouvellePartie{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: 50px;
+        width: 220px;
+        color: navajowhite;
+        font-family: Verdana;
+        background: darkred;
+        border: 2px grey solid;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin-left: 45px;
+    }
+
+    #plateauJeu{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 0px;
+
+    }
+
+    .case{
+        height: 90px;
+        width: 90px;
+        border: 2px solid grey;
+        margin: 5px;
+        background: navajowhite;
+    }
+
+    .carte{
+        height: 80px;
+        width: 80px;
+        margin: 5px;
+        visibility: hidden;
+    }
 
 }
 
 
+@media (min-width: 370px) and (max-width: 415px)
+{
 
+    body{
+        background: indianred;
+    }
+
+    #boutonNouvellePartie{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        height: 50px;
+        width: 220px;
+        color: navajowhite;
+        font-family: Verdana;
+        background: darkred;
+        border: 2px grey solid;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin-left: 85px;
+    }
+
+    #plateauJeu{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-left: 30px;
+
+    }
+
+    .case{
+        height: 100px;
+        width: 100px;
+        border: 2px solid grey;
+        margin: 5px;
+        background: navajowhite;
+    }
+
+    .carte{
+        height: 90px;
+        width: 90px;
+        margin: 5px;
+        visibility: hidden;
+    }
+
+}
+
+
+@media (min-width: 764px) and (max-width: 1025px)
+{
+
+    body{
+        background: indianred;
+    }
+
+    #boutonNouvellePartie{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        height: 80px;
+        width: 220px;
+        color: navajowhite;
+        font-family: Verdana;
+        background: darkred;
+        border: 2px grey solid;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin-left: 240px;
+    }
+
+    #plateauJeu{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-left: 120px;
+
+    }
+
+    .case{
+        height: 150px;
+        width: 150px;
+        border: 2px solid grey;
+        margin: 5px;
+        background: navajowhite;
+    }
+
+    .carte{
+        height: 140px;
+        width: 140px;
+        margin: 5px;
+        visibility: hidden;
+    }
+
+}
